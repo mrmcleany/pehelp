@@ -1,11 +1,159 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Test Site</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PE Revision Hub | GCSE & A Level</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      background: #f6f8fa;
+      color: #222;
+      line-height: 1.6;
+    }
+    header {
+      background: #0f2a44;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    nav {
+      background: #163b5c;
+      padding: 0.5rem;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .card h3 {
+      margin-top: 0;
+      color: #0f2a44;
+    }
+    .button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.6rem 1rem;
+      background: #0f2a44;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 0.9rem;
+    }
+    .button:hover {
+      background: #163b5c;
+    }
+    footer {
+      background: #0f2a44;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
-  <h1>It works</h1>
-  <p>If you can see this, HTML is working.</p>
+
+<header>
+  <h1>PE Revision Hub</h1>
+  <p>Clear, exam-focused GCSE & A Level Physical Education revision</p>
+</header>
+
+<nav>
+  <a href="#gcse">GCSE PE</a>
+  <a href="#alevel">A Level PE</a>
+  <a href="#exam">Exam Technique</a>
+  <a href="#about">About</a>
+</nav>
+
+<div class="container">
+
+  <section id="gcse">
+    <h2>GCSE PE</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Anatomy & Physiology</h3>
+        <p>Skeletal system, muscular system, movement analysis and more.</p>
+        <a class="button" href="#">View Topics</a>
+      </div>
+      <div class="card">
+        <h3>Physical Training</h3>
+        <p>Components of fitness, training methods and principles.</p>
+        <a class="button" href="#">View Topics</a>
+      </div>
+      <div class="card">
+        <h3>Sports Psychology</h3>
+        <p>Motivation, goal setting, feedback and mental preparation.</p>
+        <a class="button" href="#">View Topics</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="alevel">
+    <h2>A Level PE</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Exercise Physiology</h3>
+        <p>Energy systems, fatigue, recovery and training adaptations.</p>
+        <a class="button" href="#">View Topics</a>
+      </div>
+      <div class="card">
+        <h3>Biomechanics</h3>
+        <p>Levers, forces, angular motion and performance analysis.</p>
+        <a class="button" href="#">View Topics</a>
+      </div>
+      <div class="card">
+        <h3>Skill Acquisition</h3>
+        <p>Learning theories, guidance, practice methods.</p>
+        <a class="button" href="#">View Topics</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="exam">
+    <h2>Exam Technique</h2>
+    <div class="card">
+      <p>Learn how to structure answers, interpret command words and avoid common mistakes.</p>
+      <a class="button" href="#">Go to Exam Skills</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About This Site</h2>
+    <div class="card">
+      <p>This site is designed to help GCSE and A Level students understand PE content clearly and perform better in exams through structured explanations and exam-focused guidance.</p>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <p>PE Revision Hub | Independent exam support resource</p>
+</footer>
+
 </body>
 </html>
